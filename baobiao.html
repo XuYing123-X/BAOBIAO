@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.0, user-scalable=no">
+    <title>报表</title>
+
+    <!-- 引入 echarts.js -->
+    <script src="js/echarts.min.js"></script>
+    <script src="LAYUI/Layui/layui.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/baobiao.css">
+    <link rel="stylesheet" href="LAYUI/Layui/css/layui.css" media="all">
+
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="ao">澳洋健管-20190423</div>
+        </div>
+        <div class="box2">
+            <table frame=void>
+                <tr>
+                    <td width=50%>
+                        <div class="jin">今日收入合计（元）</div>
+                        <div class="shu">140,304.95</div>
+                    </td>
+                    <td width=50%>
+                        <div class="jin1">今日体检人数（个）</div>
+                        <div class="shu1">184</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="jiao">较昨日 14.55% ↑</div>
+                    </td>
+                    <td>
+                        <div class="jiao1">较昨日 14.55% ↑</div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="box3">
+            <div class="er">
+                <span class="jinri">今日收入明细</span>
+                <span class="fu">＞</span>
+            </div>
+            <hr>
+            <div class="er2">
+                <div class="ben">
+                    <div class="xiaokuai"></div>
+                    本月体检统计
+
+                </div>
+                <div class="ben1">
+                    <div class="xiaokuai1"></div>本月体检统计</div>
+
+            </div>
+
+            <div class="tu1">
+                <div class="right">
+                    <div class="jine">金额（元）</div>
+                    <div class="shu3">10,983,682.11</div>
+                </div>
+
+                <div class="right1">
+                    <div class="geshu">人数(个)</div>
+                    <div class="shu4">1006</div>
+                </div>
+
+                <div class="shuxian" style="width: 1px;height: 72px; background:#F1E3A3FF ;"></div>
+
+            </div>
+            <div class="tu2">
+                <div class="right">
+                    <div class="jine">金额（元）</div>
+                    <div class="shu3">10,983,682.11</div>
+                </div>
+                <div class="right1">
+                    <div class="geshu">人数(个)</div>
+                    <div class="shu4">1006</div>
+                </div>
+                <div class="shuxian" style="width: 1px;height: 72px; background:#F1E3A3FF ;"></div>
+            </div>
+            <div class="er">
+                <span class="jinri">本年月收入明细</span>
+                <span class="fu1">＞</span>
+            </div>
+            <hr>
+            <div class="ben3">
+                <div class="xiaokuai"></div>
+                本月体检趋势
+            </div>
+            <div class="b">
+                <div class="b1">
+                    <div class="jin7">近7天</div>
+
+
+                </div>
+                <div class="b2">
+                    <div class="jin4">近4周</div>
+                    <div class="jin6">近6月</div>
+                </div>
+            </div>
+
+            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+            <div id="main" style="width: 95%;height:40%;"></div>
+            <div class="b4"></div>
+        </div>
+
+        <div class="box4">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <!-- 选项卡标题 -->
+                <ul class="layui-tab-title">
+                    <!-- 标题1 -->
+                    <li>护理工作量</li>
+                    <!-- 标题2 -->
+                    <li class="layui-this">医生工作量</li>
+                </ul>
+                <!-- 选项卡内容 -->
+                <div class="layui-tab-content" style="height: 100px;">
+                    <!-- 内容1 -->
+                    <div class="layui-tab-item">！</div>
+                    <!-- 内容2 -->
+                    <div class="layui-tab-item layui-show">
+                        <table class="table1">
+                            <tr>
+                                <th width=38%>医生</th>
+                                <th width=35%>预检</th>
+                                <th>主检</th>
+                            </tr>
+                            <tr>
+                                <td>赵医生</td>
+                                <td>20</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>赵医生</td>
+                                <td>14</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>赵医生</td>
+                                <td>60</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>赵医生</td>
+                                <td>14</td>
+                                <td>14</td>
+                            </tr>
+                            <tr class="last">
+                                <td>赵医生</td>
+                                <td>60</td>
+                                <td>60</td>
+                            </tr>
+                        </table>
+                        <div class="btn_div">
+                            <button class="btn">
+                            查看更多
+                        </button>
+                        </div>
+                        <div class="b5"></div>
+                    </div>
+                    <!-- 内容2结束 -->
+                </div>
+                <!-- 内容结束 -->
+            </div>
+        </div>
+        <div class="box5">
+            <table class="table2">
+                <tr>
+                    <th width=73%>检查项目</th>
+                    <th>人数</th>
+                </tr>
+                <tr>
+                    <td>B超肝胆脾胰双肾（出图文)</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>心电图</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>全胸片(出片)</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>胸部CT平扫</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>心电图</td>
+                    <td>14</td>
+                </tr>
+                <tr class="last">
+                    <td>甲状腺B超（出图文)</td>
+                    <td>60</td>
+                </tr>
+            </table>
+            <div class="btn_div">
+                <button class="btn">
+                查看更多
+            </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        myChart.setOption({
+            xAxis: {
+                type: 'category',
+                data: ['04-17', '04-18', '04-19', '04-20', '04-21', '04-22', '04-23']
+            },
+
+            yAxis: {
+                type: 'category',
+                data: ['200', '100', '50', '0', '5', '10', '20']
+            },
+            series: [{
+                data: [20, 15, 150, 80, 70, 110, 130],
+                type: 'bar',
+                // xAxisIndex: 0,
+                showBackground: true,
+                backgroundStyle: {
+                    color: '#59C570'
+                },
+                color: '#76C3E5',
+            }]
+        })
+
+        // var xAxisData = [];
+        // var data1 = [];
+        // var data2 = [];
+        // var data3 = [];
+        // var data4 = [];
+
+        // for (var i = 0; i < 10; i++) {
+        //     xAxisData.push('Class' + i);
+        //     data1.push((Math.random() * 2).toFixed(2));
+        //     data2.push(-Math.random().toFixed(2));
+        //     data3.push((Math.random() * 5).toFixed(2));
+        //     data4.push((Math.random() + 0.3).toFixed(2));
+        // }
+
+        // var emphasisStyle = {
+        //     itemStyle: {
+        //         barBorderWidth: 1,
+        //         shadowBlur: 10,
+        //         shadowOffsetX: 0,
+        //         shadowOffsetY: 0,
+        //         shadowColor: 'rgba(0,0,0,0.5)'
+        //     }
+        // };
+
+        // myChart.setOption({
+        //     backgroundColor: '#eee',
+        //     legend: {
+        //         data: ['bar', 'bar2', 'bar3', 'bar4'],
+        //         left: 10
+        //     },
+        //     brush: {
+        //         toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
+        //         xAxisIndex: 0
+        //     },
+        //     toolbox: {
+        //         feature: {
+        //             magicType: {
+        //                 type: ['stack', 'tiled']
+        //             },
+        //             dataView: {}
+        //         }
+        //     },
+        //     tooltip: {},
+        //     xAxis: {
+        //         data: xAxisData,
+        //         // name: 'X Axis',
+        //         axisLine: {
+        //             onZero: true
+        //         },
+        //         splitLine: {
+        //             show: false
+        //         },
+        //         splitArea: {
+        //             show: false
+        //         }
+        //     },
+        //     yAxis: {
+        //         inverse: true,
+        //         splitArea: {
+        //             show: false
+        //         }
+        //     },
+        //     grid: {
+        //         left: 100
+        //     },
+        //     visualMap: {
+        //         type: 'continuous',
+        //         dimension: 1,
+        //         text: ['High', 'Low'],
+        //         inverse: true,
+        //         itemHeight: 200,
+        //         calculable: true,
+        //         min: -2,
+        //         max: 6,
+        //         top: 60,
+        //         left: 10,
+        //         inRange: {
+        //             colorLightness: [0.4, 0.8]
+        //         },
+        //         outOfRange: {
+        //             color: '#bbb'
+        //         },
+        //         controller: {
+        //             inRange: {
+        //                 color: '#2f4554'
+        //             }
+        //         }
+        //     },
+        //     series: [{
+        //         name: 'bar',
+        //         type: 'bar',
+        //         stack: 'one',
+        //         emphasis: emphasisStyle,
+        //         data: data1
+        //     }, {
+        //         name: 'bar2',
+        //         type: 'bar',
+        //         stack: 'one',
+        //         emphasis: emphasisStyle,
+        //         data: data2
+        //     }, {
+        //         name: 'bar3',
+        //         type: 'bar',
+        //         stack: 'two',
+        //         emphasis: emphasisStyle,
+        //         data: data3
+        //     }, {
+        //         name: 'bar4',
+        //         type: 'bar',
+        //         stack: 'two',
+        //         emphasis: emphasisStyle,
+        //         data: data4
+        //     }]
+        // });
+
+        // myChart.on('brushSelected', renderBrushed);
+
+        // function renderBrushed(params) {
+        //     var brushed = [];
+        //     var brushComponent = params.batch[0];
+
+        //     for (var sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
+        //         var rawIndices = brushComponent.selected[sIdx].dataIndex;
+        //         brushed.push('[Series ' + sIdx + '] ' + rawIndices.join(', '));
+        //     }
+
+        //     myChart.setOption({
+        //         title: {
+        //             backgroundColor: '#333',
+        //             text: 'SELECTED DATA INDICES: \n' + brushed.join('\n'),
+        //             bottom: 0,
+        //             right: 0,
+        //             width: 100,
+        //             textStyle: {
+        //                 fontSize: 12,
+        //                 color: '#fff'
+        //             }
+        //         }
+        //     });
+        // }
+    </script>
+
+    <!-- <script src="LAYUI/Layui/layui.js" charset="utf-8"></script> -->
+
+    <script>
+        layui.use('element', function() {
+            var $ = layui.jquery,
+                element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+            //触发事件
+            var active = {
+                tabChange: function() {
+                    //切换到指定Tab项
+                    element.tabChange('demo', '22'); //切换到：用户管理
+                }
+            };
+
+            $('.site-demo-active').on('click', function() {
+                var othis = $(this),
+                    type = othis.data('type');
+                active[type] ? active[type].call(this, othis) : '';
+            });
+
+            //Hash地址的定位
+            var layid = location.hash.replace(/^#test=/, '');
+            element.tabChange('test', layid);
+
+            element.on('tab(test)', function(elem) {
+                location.hash = 'test=' + $(this).attr('lay-id');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
