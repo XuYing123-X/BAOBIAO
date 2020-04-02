@@ -119,9 +119,9 @@
         /* position: fixed;
         right: 34px; */
         position: absolute;
-        top: -3px;
+        top: -0.1875rem;
         /* left: 705px; */
-        right: 34px;
+        right: 2.125rem;
     }
     
     .fu1 {
@@ -131,9 +131,9 @@
         /* position: fixed;
         right: 34px; */
         position: absolute;
-        top: 331px;
+        top: 20.6875rem;
         /* left: 705px; */
-        right: 34px;
+        right: 2.125rem;
     }
     
     .er {
@@ -304,7 +304,7 @@
         text-align: left;
         /* padding-bottom: .625rem; */
         font: 24px SourceHanSansCN-Normal;
-        line-height: 78px;
+        line-height: 4.875rem;
     }
     
     th {
@@ -314,13 +314,13 @@
     
     .table1 th {
         border: 0px;
-        padding-left: 74px;
+        padding-left: 4.625rem;
     }
     
     .table1 td {
         color: #8F8F8FFF;
         border: 0px;
-        padding-left: 74px;
+        padding-left: 4.625rem;
     }
     /* .table1 tr {
         border: .0625rem solid #DBDBDBFF;
@@ -331,18 +331,18 @@
         color: #4C4C4CFF;
         /* line-height: 26px; */
         float: left;
-        padding-left: 108px;
-        padding-right: 220px;
-        padding-top: 52px;
-        padding-bottom: 40px;
+        padding-left: 6.75rem;
+        padding-right: 13.75rem;
+        padding-top: 3.25rem;
+        padding-bottom: 2.5rem;
     }
     
     .yi {
         font: 28px SourceHanSansCN-Normal;
         color: #59C570FF;
         /* line-height: 26px; */
-        padding-top: 52px;
-        padding-bottom: 40px;
+        padding-top: 3.25rem;
+        padding-bottom: 2.5rem;
     }
     
     .btn {
@@ -351,7 +351,7 @@
         font: 24px SourceHanSansCN-Normal;
         color: #59C570FF;
         background-color: #FDFFFFFF;
-        border: 2px solid #59C570FF;
+        border: .125rem solid #59C570FF;
         border-radius: .125rem;
         text-align: center;
     }
@@ -360,7 +360,7 @@
         width: 14.5625rem;
         height: 3.3125rem;
         margin: 0 auto;
-        margin-top: 77px;
+        margin-top: 4.8125rem;
     }
     
     .b5 {
@@ -396,12 +396,12 @@
         text-align: left;
         /* padding-bottom: .625rem; */
         font: 24px SourceHanSansCN-Normal;
-        line-height: 78px;
+        line-height: 4.875rem;
         /* padding-left: 74px; */
     }
     
     .table2 th {
-        padding-left: 74px;
+        padding-left: 4.625rem;
         border: 0px;
     }
     
@@ -409,7 +409,7 @@
         padding-left: 74px;
         color: #8F8F8FFF;
         border: 0px;
-        margin-left: -30px;
+        margin-left: -1.875rem;
     }
     
     .last {
@@ -417,5 +417,5 @@
     }
     
     .ao {
-        padding-top: 74px;
+        padding-top: 4.625rem;
     }
