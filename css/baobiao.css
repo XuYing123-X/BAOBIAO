@@ -131,12 +131,19 @@
         /* position: fixed;
         right: 34px; */
         position: absolute;
-        top: 20.6875rem;
+        top: -0.3125rem;
         /* left: 705px; */
         right: 2.125rem;
     }
     
     .er {
+        margin-left: 2rem;
+        margin-top: 2.3125rem;
+        margin-bottom: 1.75rem;
+    }
+    
+    .er3 {
+        position: relative;
         margin-left: 2rem;
         margin-top: 2.3125rem;
         margin-bottom: 1.75rem;
